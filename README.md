@@ -1,41 +1,16 @@
-## ⏱ Counter Component (Functional + Timer Example)
+# React + Vite
 
-**File:** `Counter.jsx`
-**Concepts Covered:** `useState`, `useEffect`, event handling, functional components
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### 📌 Overview
+Currently, two official plugins are available:
 
-The `Counter` component demonstrates **React state management**, **event handling**, and **effects** using hooks. It includes **two independent counters**:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-1. **Interactive Counter**
+## React Compiler
 
-   * Uses `useState` to manage `value`.
-   * Two buttons allow the user to **increase** or **decrease** the count.
-   * Updates happen instantly using React's re-rendering system.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-2. **Timer Counter**
+## Expanding the ESLint configuration
 
-   * Uses `useState` (`timerCount`) and `useEffect` to create an **auto-incrementing timer**.
-   * The timer increases every second.
-   * `useEffect` cleanup ensures the interval is cleared when the component unmounts to prevent memory leaks.
-
----
-
-### 🎯 Key Features
-
-* **State Management**: Shows how multiple state variables can be used in a single component.
-* **Event Handling**: Button clicks update state dynamically.
-* **Side Effects & Cleanup**: Demonstrates `useEffect` for intervals and proper cleanup.
-* **Dynamic Rendering**: UI updates immediately on state changes.
-
----
-
-* **Counter** updates when user clicks buttons.
-* **Timer** updates automatically every second.
-
----
-
-<img width="377" height="244" alt="Screenshot 2025-11-29 185438" src="https://github.com/user-attachments/assets/e703e26e-093f-4492-81df-c0977d4f1222" />
-<img width="411" height="254" alt="Screenshot 2025-11-29 185446" src="https://github.com/user-attachments/assets/f739b9be-8db0-4e63-b3b4-806a8a13d441" />
-<img width="374" height="263" alt="Screenshot 2025-11-29 185454" src="https://github.com/user-attachments/assets/b4ac3468-7902-4876-a14a-5a41ea10740a" />
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
