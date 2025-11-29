@@ -1,0 +1,108 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+}
+
+body {
+  color: #1f2937; /* Dark text for light background */
+  background: #f3f4f6; /* Soft light gray background */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1, h3, h5 {
+  color: #111827; /* Darker headings */
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.student-form {
+  width: 100%;
+  min-width: 450px;
+  margin: 1.5rem auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.student-form h3 {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.student-form label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.student-form input,
+.student-form select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.student-form input:focus,
+.student-form select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.3);
+  outline: none;
+}
+.card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h5 {
+  color: #1f2937;
+}
+
+.card p {
+  margin-bottom: 0.4rem;
+  color: #4b5563;
+}
+
+.badge {
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+}
+
+.card .btn {
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  transform: translateY(-2px);
+}
