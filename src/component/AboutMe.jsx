@@ -9,9 +9,9 @@ export default function AboutMe() {
                         <div className="col-md-6">
                             <div className="aboutMe position-relative">
                                 <div className="about-text position-absolute">
-                                    <p className="text-white fw-light my-0">30+
+                                    <p className="text-white fw-light">30+
                                         <br/>
-                                        <span className="my-0">Years Experience</span>
+                                        <span className="">Years Experience</span>
                                     </p>
                                 </div>
                                 <img src="./src/assets/img/aboutMe.png" alt="" className="img-fluid" />
@@ -38,4 +38,5 @@ export default function AboutMe() {
             </section>
         </>
     );
+
 }
