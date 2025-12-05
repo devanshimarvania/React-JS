@@ -134,7 +134,7 @@ This homepage was created to:
 ---
 
 <img width="1868" height="735" alt="Screenshot 2025-12-05 112433" src="https://github.com/user-attachments/assets/b75a9798-749f-4ce4-be36-f9c3d565b400" />
-<img width="1888" height="714" alt="Screenshot 2025-12-05 113910" src="https://github.com/user-attachments/assets/a03cef28-d736-4a6f-9a11-0f125f0953fa" />
+<img width="1893" height="730" alt="Screenshot 2025-12-05 131017" src="https://github.com/user-attachments/assets/72724ea2-d7b8-4120-bb84-8f0516fe2018" />
 <img width="1899" height="497" alt="Screenshot 2025-12-05 112533" src="https://github.com/user-attachments/assets/3976ce51-ac0c-4a18-9760-c2ba74509845" />
 <img width="1894" height="791" alt="Screenshot 2025-12-05 112558" src="https://github.com/user-attachments/assets/070b997f-33cb-41a8-8d21-f3c6fc66a591" />
 <img width="1890" height="941" alt="Screenshot 2025-12-05 112637" src="https://github.com/user-attachments/assets/cd1e3bf8-8ce5-4d1c-8013-d83cb3741a47" />
