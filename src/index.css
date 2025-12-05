@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --head-text: "Oswald";
+  --sub-text: "Roboto";
+  --bs-primary: #cc866c !important;
+  --bs-primary-rgb: 04, 134, 108;
+  --text-color: #777777;
+  --text-color-rgb: 119, 119, 119;
+  --gw: 15px;
+  --lh: 1.5;
+  --fw: 400;
+  --fs: 16px;
+}
+
+body {
+  font-family: var(--sub-text);
+  font-weight: var(--fw);
+  font-size: var(--fs);
+  line-height: var(--lh);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--head-text);
+  color: #fff;
+}
+
+h4,
+h6,
+.color {
+  color: #cc866c;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.head-text {
+  font-family: var(--head-text);
+}
+
+.footerlinks ul li a {
+  transition: all 0.5s;
+}
+
+.collapse ul li:hover a,
+.footerlinks ul li a:hover {
+  color: #cc866c !important;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #cc866c;
+  --bs-btn-border-color: #cc866c;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #cc866c;
+  --bs-btn-active-border-color: #cc866c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #cc866c;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #cc866c;
+  --bs-gradient: none;
+}
+
+.btn-secondary {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #cc866c;
+  --bs-btn-hover-border-color: #cc866c;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #fff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #fff;
+  --bs-btn-disabled-border-color: #fff;
+}
+
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.hero {
+  background-image: url('./assets/img/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.about-text {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #cc866c;
+  border: #fff 2px solid;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-text p {
+  margin-bottom: 0;
+  font-size: 60px;
+  color: #fff;
+  font-family: var(--head-text);
+}
+
+.about-text span {
+  font-family: var(--sub-text);
+  font-size: 16px;
+}
+
+.card {
+  border: 0;
+  transition: 0.5s all;
+  background-color: #212529;
+}
+
+.service .card:hover {
+  transform: translateY(-20px);
+  background-color: #f1e3da;
+}
+
+.service .card-body h5,
+.news .card-body h5 {
+  color: #FFF;
+  transition: 0.5s all;
+}
+
+.newsBtn a {
+  color: #cc866c;
+  transition: 0.5s all;
+}
+
+.newsBtn a:hover {
+  color: #FFF;
+}
+
+.service .card:hover .card-body h5 {
+  color: #000;
+}
+
+.news .card .card-body h5:hover {
+  color: #cc866c;
+}
+
+.primary-bg {
+  background-color: var(--bs-primary);
+}
+
+.primary-text {
+  color: var(--bs-primary);
+}
+
+.newslater input {
+  background: #fff !important;
+  border: 1px solid #FFF !important;
+  box-shadow: none !important;
+  color: #000 !important;
+  padding: 15px 0 15px 15px;
+  border-radius: 0px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.newslater button {
+  background: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 40px;
+  border-radius: 0px !important;
+
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #000;
+  --bs-btn-border-color: #000;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f1e3da;
+  --bs-btn-hover-border-color: #f1e3da;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #000;
+  --bs-btn-active-border-color: #000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #000;
+  --bs-gradient: none;
+}
+
+.footerLine h2::before,
+.footerLines h2::before {
+  position: absolute;
+  content: '';
+  bottom: -70%;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  border: 2px solid #cc866c;
+  border-radius: 50%;
+}
+
+.footerLine h2::after,
+.footerLines h2::after {
+  position: absolute;
+  content: '';
+  bottom: -54%;
+  left: 8%;
+  height: 2px;
+  width: 25px;
+  background-color: #cc866c;
+}
+
+.footerLines h2::after {
+  left: 5%;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footerlinks ul li a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.footerIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #cc866c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.footerIcon i {
+  color: #FFF;
+}
+
+.term::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: 29%;
+  height: 22px;
+  width: 1px;
+  background-color: #777777;
+}
+/* Default pill style */
+.nav-pills .nav-link {
+  border-radius: 50px !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #fff !important;
+  padding: 8px 22px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: var(--head-text);
+  font-weight: 300;
+}
+
+/* Hover effect */
+.nav-pills .nav-link:hover {
+  background-color: #cc866c !important;
+  color: #ffffff !important;
+  border: 1px solid #cc866c !important;
+}
+
+/* Active pill style */
+.nav-pills .nav-link.active {
+  background-color: #cc866c !important;
+  color: #ffffff !important;
+  border: 1px solid #cc866c !important;
+}
