@@ -4,25 +4,19 @@ import { useNavigate } from "react-router-dom";
 const ViewEmployee = () => {
     const navigate = useNavigate();
 
-    // Original employee state (DO NOT mutate directly)
     const [employees, setEmployees] = useState([]);
 
-    // 🔍 Search state
     const [searchTerm, setSearchTerm] = useState("");
 
-    // 🔃 Sort state
     const [sortOption, setSortOption] = useState("");
 
-    // 🎯 Filter state
     const [statusFilter, setStatusFilter] = useState("all");
 
-    // Load employees from localStorage
     useEffect(() => {
         const storedEmployees = JSON.parse(localStorage.getItem("employees")) || [];
         setEmployees(storedEmployees);
     }, []);
 
-    // Delete employee (unchanged)
     const handleDelete = (id) => {
         if (window.confirm("Are you sure you want to delete this employee?")) {
             const updatedEmployees = employees.filter((emp) => emp.id !== id);
@@ -31,34 +25,23 @@ const ViewEmployee = () => {
         }
     };
 
-    // Navigate to Edit page (unchanged)
     const handleEdit = (id) => {
         navigate(`/edit-employee/${id}`);
     };
 
-    /**
-     * 🧠 Derived Employees Array
-     * - Search
-     * - Filter
-     * - Sort
-     * This ensures original data remains untouched
-     */
     const filteredEmployees = useMemo(() => {
         let data = [...employees];
 
-        // 🔍 SEARCH LOGIC (case-insensitive, real-time)
         if (searchTerm.trim() !== "") {
             data = data.filter(emp =>
                 emp.name.toLowerCase().includes(searchTerm.toLowerCase())
             );
         }
 
-        // 🎯 FILTER LOGIC (Active / Inactive)
         if (statusFilter !== "all") {
             data = data.filter(emp => emp.status.toLowerCase() === statusFilter);
         }
 
-        // 🔃 SORTING LOGIC
         switch (sortOption) {
             case "name-asc":
                 data.sort((a, b) => a.name.localeCompare(b.name));
@@ -83,7 +66,6 @@ const ViewEmployee = () => {
         <div>
             <h2 className="mb-4 text-center text-dark">View Employees</h2>
 
-            {/* 🔧 Controls Section */}
             <div className="row mb-4 g-3">
                 {/* Search */}
                 <div className="col-md-4">
@@ -231,3 +213,4 @@ const ViewEmployee = () => {
 };
 
 export default ViewEmployee;
+
