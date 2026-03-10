@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Aarav Sharma",
+      "rollNumber": "CS2024001",
+      "degree": "B.Tech Computer Science",
+      "year": "2nd Year",
+      "email": "aarav@college.com"
+    },
+    {
+      "id": 2,
+      "name": "Priya Patel",
+      "rollNumber": "IT2024002",
+      "degree": "B.Tech Information Technology",
+      "year": "1st Year",
+      "email": "priya@college.com"
+    },
+    {
+      "id": 4,
+      "name": "Sneha Joshi",
+      "rollNumber": "BCA2022004",
+      "degree": "BCA",
+      "year": "3rd Year",
+      "email": "sneha@college.com"
+    },
+    {
+      "id": 5,
+      "name": "Karan Verma",
+      "rollNumber": "ME2021005",
+      "degree": "M.Tech Computer Science",
+      "year": "4th Year",
+      "email": "karan@college.com"
+    },
+    {
+      "name": "Devanshi Patel",
+      "rollNumber": "CS2024002",
+      "degree": "B.Tech Computer Science",
+      "year": "1st Year",
+      "email": "devanshi@college.com",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "name": "Admin Teacher"
+    }
+  ]
+}
